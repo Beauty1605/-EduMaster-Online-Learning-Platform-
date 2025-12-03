@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Learning Platform</title>
+
+    <style>
+        body { font-family: Poppins, sans-serif; margin: 0; background: #f3f4f6; }
+        header { background: #3b82f6; color: white; text-align: center; padding: 20px; font-size: 28px; }
+
+        .container { width: 85%; margin: auto; padding: 20px; }
+
+        h2 { color: #3b82f6; }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white; padding: 15px;
+            border-radius: 10px; box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+        }
+
+        button {
+            padding: 8px 15px;
+            background: #3b82f6;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .testimonial {
+            background: #ffffff; padding: 15px;
+            border-left: 4px solid #3b82f6;
+            margin: 15px 0; border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+
+<header>🎓 EduMaster – Online Learning Platform</header>
+
+<div class="container">
+
+    <!-- Course Listings -->
+    <h2>📚 Popular Courses</h2>
+    <div class="grid">
+
+        <div class="card">
+            <h3>Web Development</h3>
+            <p>Duration: 3 Months</p>
+            <p>Learn HTML, CSS, JS & React.</p>
+            <button onclick="enroll('Web Development')">Enroll Now</button>
+        </div>
+
+        <div class="card">
+            <h3>Data Science</h3>
+            <p>Duration: 4 Months</p>
+            <p>Python, ML, and AI basics.</p>
+            <button onclick="enroll('Data Science')">Enroll Now</button>
+        </div>
+
+        <div class="card">
+            <h3>App Development</h3>
+            <p>Duration: 2 Months</p>
+            <p>Android, Flutter & UI basics.</p>
+            <button onclick="enroll('App Development')">Enroll Now</button>
+        </div>
+
+    </div>
+
+    <!-- Testimonials -->
+    <h2>💬 Student Testimonials</h2>
+
+    <div class="testimonial">
+        "This platform changed my life! The courses are amazing." — ⭐⭐⭐⭐⭐
+    </div>
+
+    <div class="testimonial">
+        "Very easy to understand and beginner-friendly." — ⭐⭐⭐⭐☆
+    </div>
+
+    <div class="testimonial">
+        "Best place to learn coding online!" — ⭐⭐⭐⭐⭐
+    </div>
+
+</div>
+
+<script>
+    function enroll(course) {
+        alert("You enrolled in: " + course);
+    }
+</script>
+
+</body>
+</html>
